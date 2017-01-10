@@ -14,15 +14,25 @@ vibe.setPattern([1000,300,1000,300,1000,2000,2000,300,2000,300,2000,2000,1000,30
 or
 vibe.setPattern(200);
 ```
+
+#### once
+
 ```
 // run vibrate once; if no arg, it will get the default pattern;
 // vibe.once([pattern]);
 vibe.once(200);// vibrate for 200ms
 ```
+
+#### stop
+
 ```
 // stop the vibrate anytime;
 vibe.stop();
+```
 
+#### loop
+
+```
 // run vibrate loop with gap; if no arg, it will get the default pattern;
 // vibe.loop([pattern, interval]);
 vibe.loop([1000, 100, 300], 100);

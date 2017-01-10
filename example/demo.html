@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vibration</title>
+
+</head>
+<body>
+  <button onclick="vibe.once()">once</button>
+  <button onclick="vibe.loop()">loop</button>
+  <button onclick="vibe.stop()">stop</button>
+
+  <script src="../src/vibrate.min.js" charset="utf-8"></script>
+  <script>
+    window.onload = function(){
+      // Vibrate 'SOS' in Morse.
+      vibe.setPattern([1000,300,1000,300,1000,2000,2000,300,2000,300,2000,2000,1000,300,1000,300,1000]);
+    }
+  </script>
+</body>
+</html>

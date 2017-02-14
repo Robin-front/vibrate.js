@@ -1,15 +1,33 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Vibration</title>
-
+  <style>
+  button {
+    display: block;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    background-color: #39b54a;
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    user-select: none;
+    outline: 0;
+  }
+  </style>
 </head>
 <body>
-  <button onclick="vibe.once()">once</button>
-  <button onclick="vibe.loop()">loop</button>
-  <button onclick="vibe.stop()">stop</button>
+  <button onclick="vibe.once()">单次/once</button>
+  <button onclick="vibe.loop()">循环/loop</button>
+  <button onclick="vibe.stop()">停止/stop</button>
+  <button onclick="vibe.once(1000)">强/strong</button>
+  <button onclick="vibe.once(500)">中/medium</button>
+  <button onclick="vibe.once(100)">弱/weak</button>
 
   <script src="../src/vibrate.min.js" charset="utf-8"></script>
   <script>

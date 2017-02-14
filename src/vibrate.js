@@ -1,3 +1,9 @@
+/*!
+ * vibrate.js
+ * @robin
+ * @2017-02-14
+ */
+
 ;(function(win, vibe) {
 
   var vibrate = "vibrate" in navigator ? 'vibrate' : "mozVibrate" in navigator ? 'mozVibrate' : undefined;
